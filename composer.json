@@ -31,13 +31,14 @@
         "ext-pdo": "*",
         "ext-bcmath": "*",
         "txthinking/mailer": "^2.0",
-        "grpc/grpc": "^1.42"
+        "grpc/grpc": "^1.42",
+        "google/protobuf":"^3.19"
     },
     "config": {
         "preferred-install": "dist",
         "allow-plugins": {
-            "topthink/think-installer": true,
-            "easywechat-composer/easywechat-composer": true
+            "easywechat-composer/easywechat-composer": true,
+            "topthink/think-installer": true
         }
     },
     "repositories": [

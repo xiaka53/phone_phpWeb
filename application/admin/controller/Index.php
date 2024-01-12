@@ -4,6 +4,7 @@ namespace app\admin\controller;
 
 use app\admin\model\AdminLog;
 use app\common\controller\Backend;
+use app\common\controller\GrpcServer;
 use think\Config;
 use think\Hook;
 use think\Session;
@@ -65,6 +66,8 @@ class Index extends Backend
      */
     public function login()
     {
+        $client=GrpcServer::getAccountClient();
+        $client->AccountSelect()->wait();
         $url = $this->request->get('url', '', 'url_clean');
         $url = $url ?: 'index/index';
         if ($this->auth->isLogin()) {

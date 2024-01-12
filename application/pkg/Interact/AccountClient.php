@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Interact;
+namespace app\pkg\Interact;
 
 /**
  */
