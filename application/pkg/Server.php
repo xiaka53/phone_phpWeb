@@ -17,7 +17,7 @@ class Account{
         $request->setUrl("asss");
     
         list($respone,$states)=$accountClient->AccountSelect($request)->wait();
-        echo sprintf("code: %s, msg: %s \n", $response->getCode(), $response->getMsg());
+        echo sprintf("code: %s, msg: %s \n", $respone->getAmount(), $states);
     }
 }
 $a=new Account;
