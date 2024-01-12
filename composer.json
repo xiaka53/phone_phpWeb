@@ -46,11 +46,5 @@
             "type": "git",
             "url": "https://gitee.com/fastadminnet/framework.git"
         }
-    ],
-    "autoload":{
-        "psr-4": {
-            "GPBMetadata\\": "pkg/GPBMetadata/",
-            "Interact\\": "pkg/Interact/"
-        }
-    }
+    ]
 }

@@ -4,7 +4,7 @@ namespace app\admin\controller;
 
 use app\admin\model\AdminLog;
 use app\common\controller\Backend;
-use app\common\controller\GrpcServer;
+use app\common\library\GrpcServer;
 use think\Config;
 use think\Hook;
 use think\Session;
